@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using my_books.Data;
+using my_books.Data.Services;
 
 namespace my_books
 {
@@ -31,6 +32,12 @@ namespace my_books
             services.AddControllers();
             // Configure DBContext with SQL
             services.AddDbContext<AppDBContext>(options=>options.UseSqlServer(ConnectionString));
+
+            // Configure Book services
+            services.AddTransient<BooksService>();
+            services.AddTransient<AuthorsService>();
+            services.AddTransient<PublishersService>();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v2", new OpenApiInfo { Title = "my_books_updated_tittle", Version = "v2" });
@@ -56,7 +63,8 @@ namespace my_books
             {
                 endpoints.MapControllers();
             });
-            AppDbInitializer.Seed(app);
+            
+            // AppDbInitializer.Seed(app);
         }
     }
 }
