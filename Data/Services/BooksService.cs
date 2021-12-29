@@ -15,7 +15,7 @@ namespace my_books.Data.Services
         }
         public void AddBookWithAuthors(BookVM book)
         {
-            var  _book = new Book()
+            var  _book = new Book() 
             {
                 Title = book.Title,
                 Description = book.Description,
@@ -28,7 +28,7 @@ namespace my_books.Data.Services
                 PublisherId = book.PublisherId
             };
             _context.Books.Add(_book);
-            _context.SaveChanges();
+            _context.SaveChanges(); 
 
 
             foreach (var id in book.AuthorIds)

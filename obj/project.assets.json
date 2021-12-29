@@ -5979,24 +5979,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/taofeeka/.nuget/packages/": {}
+    "C:\\Users\\taofeek.adegoke\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/taofeeka/cShapBench/my-books/my-books.csproj",
+      "projectUniqueName": "C:\\Users\\taofeek.adegoke\\source\\repos\\my-books\\my-books.csproj",
       "projectName": "my-books",
-      "projectPath": "/Users/taofeeka/cShapBench/my-books/my-books.csproj",
-      "packagesPath": "/Users/taofeeka/.nuget/packages/",
-      "outputPath": "/Users/taofeeka/cShapBench/my-books/obj/",
+      "projectPath": "C:\\Users\\taofeek.adegoke\\source\\repos\\my-books\\my-books.csproj",
+      "packagesPath": "C:\\Users\\taofeek.adegoke\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\taofeek.adegoke\\source\\repos\\my-books\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/taofeeka/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\taofeek.adegoke\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6052,7 +6059,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

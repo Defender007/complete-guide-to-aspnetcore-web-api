@@ -18,23 +18,19 @@ namespace my_books.Controllers
             _publishersService = publishersService;
         }
 
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
-        {
-            return "value";
-        }
 
         [HttpPost("add-publisher")]
-        public IActionResult AddAuthor([FromBody] PublisherVM publisher)
+        public IActionResult AddBook([FromBody] PublisherVM publisher)
         {
             _publishersService.AddPublisher(publisher);
             return Ok();
+        }
+
+        [HttpGet("get-publisher-books-with-authors/{id}")]
+        public IActionResult GetPublisherData(int id)
+        {
+            var _response = _publishersService.GetPublisherData(id);
+            return Ok(_response);
         }
 
         [HttpPut("{id}")]

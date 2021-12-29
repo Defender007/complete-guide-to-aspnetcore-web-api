@@ -35,7 +35,7 @@ namespace my_books.Data
                         CoverUrl = "http....com",
                         DateAdded = DateTime.Now
                     });
-                    context.SaveChanges();
+                   // context.SaveChanges();
                 }
             }
         }
